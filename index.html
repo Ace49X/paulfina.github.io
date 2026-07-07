@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Paul Fina — Sales Development Representative portfolio with cold call demos, objection handling, CRM knowledge, and bilingual communication skills." />
+  <title>Paul Fina | SDR Sales Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <script>
+    /*
+      ======================================================
+      ✅ FILL THIS OUT — THIS IS THE ONLY SECTION YOU NEED TO EDIT
+      ======================================================
+
+      How to use this:
+      1. Edit the text inside the quotation marks.
+      2. Do NOT delete commas, quotation marks, brackets, or colons.
+      3. If you do not have a link yet, leave it blank like this: ""
+      4. After editing, click "Commit changes" in GitHub.
+
+      Most common things you will update:
+      - email
+      - phone
+      - linkedinUrl
+      - resumeFile
+      - video links
+      - about paragraphs
+      - sales samples
+    */
+
+    const portfolio = {
+      name: "Paul Fina",
+      initials: "PF",
+      location: "Pensacola, Florida",
+      title: "Bilingual Sales Development Candidate",
+      headline: "Prepared to bring clear communication, persistence, and coachability to an SDR team.",
+      email: "lukepaulmax@gmail.com",
+      phone: "448-204-8602",
+      linkedinUrl: "https://www.linkedin.com/", // Replace this with your real LinkedIn URL
+      resumeFile: "Paul-Fina-Resume.pdf", // Upload your resume PDF with this exact file name, or change this line
+
+      heroParagraph: "I am transitioning into sales after customer-facing experience in online education and electrical services. This portfolio shows how I communicate, handle objections, think through outbound sales, and learn CRM workflows.",
+
+      stats: [
+        { big: "English + Spanish", small: "B2 Spanish" },
+        { big: "70+ WPM", small: "Fast documentation" },
+        { big: "CRM Focused", small: "Salesforce + HubSpot" }
+      ],
+
+      profileBullets: [
+        "Cold call practice",
+        "Objection handling",
+        "CRM learning",
+        "Customer communication"
+      ],
+
+      aboutTitle: "Why sales?",
+      aboutParagraphs: [
+        "I enjoy roles where strong communication, curiosity, follow-up, and trust matter. As an English tutor, I work one-on-one with students, adapt to different personalities, and keep people motivated toward their goals. In electrical service roles, I learned how to explain technical work clearly, answer customer questions, and stay dependable in fast-moving environments.",
+        "I am now focused on Sales Development because it rewards the same strengths: preparation, active listening, consistency, resilience, and the ability to create opportunities through conversation."
+      ],
+
+      /*
+        VIDEO LINKS:
+        Paste YouTube embed links here later.
+        Normal YouTube links look like this:
+          https://www.youtube.com/watch?v=ABC123
+        Embed links look like this:
+          https://www.youtube.com/embed/ABC123
+        Leave blank for now and the site will show the nice video placeholder.
+      */
+      videos: [
+        {
+          label: "Intro Video",
+          title: "60-Second Introduction",
+          description: "A quick overview of who I am, why I am pursuing SDR roles, and the strengths I bring to a sales team.",
+          embedUrl: ""
+        },
+        {
+          label: "Cold Call Demo",
+          title: "Cold Call Demo",
+          description: "A sample outbound call showing opener, pattern interrupt, discovery question, value statement, and meeting ask.",
+          embedUrl: ""
+        },
+        {
+          label: "Objection Handling",
+          title: "Objection Handling",
+          description: "Responses to common objections like “send me an email,” “not interested,” and “we already have someone.”",
+          embedUrl: ""
+        }
+      ],
+
+      crmTools: [
+        {
+          number: "01",
+          name: "Salesforce",
+          description: "Learning lead records, contact notes, activities, tasks, follow-ups, and pipeline organization."
+        },
+        {
+          number: "02",
+          name: "HubSpot",
+          description: "Practicing CRM basics, contact management, email tracking concepts, and sales software workflows."
+        },
+        {
+          number: "03",
+          name: "GoHighLevel",
+          description: "Familiar with lead tracking concepts, appointment setting, automations, and follow-up sequences."
+        }
+      ],
+
+      salesSamples: [
+        {
+          title: "Cold Call Opener",
+          type: "script",
+          content: "“Hey [Name], this is Paul. I know I’m calling out of the blue — do you have 20 seconds for me to explain why I called, and then you can tell me if it’s worth continuing?”"
+        },
+        {
+          title: "“Send Me an Email”",
+          type: "script",
+          content: "“Absolutely. So I don’t send something irrelevant, what should I focus the email on — saving time, lowering costs, or improving your team’s current process?”"
+        },
+        {
+          title: "Discovery Questions",
+          type: "list",
+          content: [
+            "How are you handling this process today?",
+            "What is working well with your current approach?",
+            "What would need to improve for it to be worth changing?"
+          ]
+        }
+      ],
+
+      whyHireTitle: "Prepared, coachable, and serious about sales.",
+      whyHireBullets: [
+        "I have customer-facing experience and understand how to build trust through clear communication.",
+        "I am bilingual in English and Spanish, which can help with a wider range of prospects.",
+        "I am actively practicing cold calling, objection handling, CRM workflows, and sales fundamentals.",
+        "I am comfortable working independently, managing schedules, and following through consistently."
+      ],
+
+      contactHeadline: "Open to SDR, BDR, appointment-setting, and inside sales opportunities.",
+      footerText: "Sales Development Portfolio"
+    };
+  </script>
+
+  <div class="page-glow"></div>
+
+  <header class="site-header">
+    <a href="#top" class="logo"><span data-text="initials">PF</span><span>.</span></a>
+    <nav class="nav" aria-label="Main navigation">
+      <a href="#videos">Videos</a>
+      <a href="#crm">CRM</a>
+      <a href="#samples">Sales Samples</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">☾</button>
+  </header>
+
+  <main id="top">
+    <section class="hero section">
+      <div class="hero-content reveal">
+        <p class="eyebrow" data-text="title"></p>
+        <h1 data-text="name"></h1>
+        <h2 data-text="headline"></h2>
+        <p class="hero-copy" data-text="heroParagraph"></p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#videos">Watch Sales Demos</a>
+          <a class="btn secondary" data-link="resume" target="_blank" rel="noreferrer">View Résumé</a>
+        </div>
+        <div class="stats" id="stats"></div>
+      </div>
+
+      <aside class="profile-card reveal delay-1">
+        <div class="avatar" data-text="initials"></div>
+        <h3>Sales Portfolio</h3>
+        <p data-text="location"></p>
+        <ul id="profileBullets"></ul>
+        <a class="card-link" id="emailLink"></a>
+      </aside>
+    </section>
+
+    <section class="section split" id="about">
+      <div class="section-heading reveal">
+        <p class="eyebrow">About</p>
+        <h2 data-text="aboutTitle"></h2>
+      </div>
+      <div class="text-card reveal delay-1" id="aboutParagraphs"></div>
+    </section>
+
+    <section class="section" id="videos">
+      <div class="section-heading center reveal">
+        <p class="eyebrow">Video Proof</p>
+        <h2>Sales demo videos</h2>
+        <p>Replace these placeholders with unlisted YouTube or Loom links when your clips are ready.</p>
+      </div>
+      <div class="video-grid" id="videoGrid"></div>
+    </section>
+
+    <section class="section" id="crm">
+      <div class="section-heading center reveal">
+        <p class="eyebrow">CRM Knowledge</p>
+        <h2>Sales tools I am learning</h2>
+      </div>
+      <div class="tool-grid" id="toolGrid"></div>
+    </section>
+
+    <section class="section" id="samples">
+      <div class="section-heading center reveal">
+        <p class="eyebrow">Sales Samples</p>
+        <h2>How I think through outbound sales</h2>
+      </div>
+      <div class="sample-grid" id="sampleGrid"></div>
+    </section>
+
+    <section class="section split" id="why-hire">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Why Hire Me</p>
+        <h2 data-text="whyHireTitle"></h2>
+      </div>
+      <div class="text-card reveal delay-1">
+        <ul class="check-list" id="whyHireBullets"></ul>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="contact-card reveal">
+        <p class="eyebrow">Contact</p>
+        <h2 data-text="contactHeadline"></h2>
+        <div class="contact-actions">
+          <a class="btn primary" id="contactEmail">Email Me</a>
+          <a class="btn secondary" id="linkedinButton" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a class="btn secondary" data-link="resume" target="_blank" rel="noreferrer">Résumé</a>
+        </div>
+        <p class="small-note">Before publishing: replace the LinkedIn URL, add your résumé PDF, and embed your actual video links.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> <span data-text="name"></span>. <span data-text="footerText"></span>.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
