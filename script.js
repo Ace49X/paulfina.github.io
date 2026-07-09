@@ -40,7 +40,15 @@ function renderPortfolio() {
   $('#videoGrid').innerHTML = portfolio.videos.map((video, index) => {
     const delay = index === 0 ? '' : ` delay-${index}`;
     const media = video.embedUrl
-      ? `<iframe class="video-embed" src="${escapeHtml(video.embedUrl)}" title="${escapeHtml(video.title)}" allowfullscreen></iframe>`
+      ? `<iframe 
+    class="video-embed" 
+    src="${escapeHtml(video.embedUrl)}" 
+    title="${escapeHtml(video.title)}" 
+    frameborder="0"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowfullscreen>
+  </iframe>`
       : `<div class="video-placeholder" data-label="${escapeHtml(video.label)}">▶</div>`;
 
     return `
