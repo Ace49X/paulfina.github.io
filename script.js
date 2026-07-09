@@ -21,8 +21,10 @@ function renderPortfolio() {
   });
 
   $('#emailLink').textContent = portfolio.email;
-  $('#emailLink').href = `mailto:${portfolio.email}`;
-  $('#contactEmail').href = `mailto:${portfolio.email}`;
+  $('#emailLink').href = `https://mail.google.com/mail/?view=cm&fs=1&to=${portfolio.email}`;
+$('#emailLink').target = '_blank';
+  $('#contactEmail').href = `https://mail.google.com/mail/?view=cm&fs=1&to=${portfolio.email}`;
+$('#contactEmail').target = '_blank';
   $('#linkedinButton').href = portfolio.linkedinUrl || '#';
 
   $('#stats').innerHTML = portfolio.stats.map((item) => `
